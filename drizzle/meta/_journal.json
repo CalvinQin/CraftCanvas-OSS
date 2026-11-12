@@ -1,0 +1,55 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1791264650830,
+      "tag": "0000_sudden_talon",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1791266028247,
+      "tag": "0001_overconfident_bedlam",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1791267316976,
+      "tag": "0002_worried_chameleon",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1791267997869,
+      "tag": "0003_volatile_iron_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1791270660351,
+      "tag": "0004_eager_kylun",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1791272282346,
+      "tag": "0005_curvy_dexter_bennett",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1794495622951,
+      "tag": "0006_strange_killmonger",
+      "breakpoints": true
+    }
+  ]
+}

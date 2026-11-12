@@ -1,0 +1,12 @@
+# Local Worker configuration. Copy to .dev.vars; never commit real values.
+# Generate your own encryption key: openssl rand -base64 32
+SETTINGS_ENCRYPTION_KEY=""
+GEMINI_API_KEY=""
+OPENAI_API_KEY=""
+ADMIN_ACCOUNT_IDS=""
+# Keep false on direct Workers deployments. Only enable behind trusted Sites ingress.
+TRUST_SITES_IDENTITY="false"
+# Optional Google OAuth; use your deployment's exact origin and callback.
+GOOGLE_CLIENT_ID=""
+GOOGLE_CLIENT_SECRET=""
+SITE_ORIGIN="http://localhost:3000"

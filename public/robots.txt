@@ -1,0 +1,3 @@
+# Safe default for development. Production build generates this file.
+User-agent: *
+Disallow: /

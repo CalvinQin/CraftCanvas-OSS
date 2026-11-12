@@ -1,0 +1,29 @@
+name: Bug report / 问题反馈
+description: 提交可复现的问题；请勿包含密钥或私人素材。
+title: "[Bug]: "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version / 版本
+      placeholder: "0.7.0, browser and deployment type"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps / 复现步骤
+      description: 使用无敏感信息的样例描述触发条件。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual / 预期与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / 补充信息
+      description: 可附已去除个人信息的截图；不要上传完整云端快照或 API 响应。

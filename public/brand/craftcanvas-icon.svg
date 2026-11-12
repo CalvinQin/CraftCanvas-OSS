@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>CraftCanvas</title>
+  <path d="M16 4H46V18H22C19.8 18 18 19.8 18 22V43C18 45.2 19.8 47 22 47H44L48 42H61L51 60H16C9.4 60 4 54.6 4 48V16C4 9.4 9.4 4 16 4Z" fill="#6E56CF"/>
+  <path d="M46 4L59 17C61 19 62 21.2 62 23C62 25.2 60.2 26 57.5 26H46V4Z" fill="#25232B"/>
+</svg>

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security / 安全报告
+    url: https://github.com/CalvinQin/CraftCanvas-OSS/security/policy
+    about: 安全问题请遵循私密报告流程。
