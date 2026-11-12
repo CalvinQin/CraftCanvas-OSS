@@ -1,6 +1,6 @@
 # Maintainer handoff
 
-Version 0.7.0 · 2026-11-13
+Version 0.7.1 · 2026-11-13
 
 Start with README.md, Design.md and docs/self-hosting.md. This public source package intentionally contains no deployment credentials, site project identity, user data or earlier private Git history.
 

@@ -10,7 +10,7 @@ for (const path of pages) {
   const html = await readFile(`dist/client${path === '/' ? '' : path}/index.html`, 'utf8');
   const title = html.match(/<title>([^<]+)<\/title>/)?.[1]; assert.ok(title, path+' has a title'); assert.ok(!titles.has(title), 'unique title'); titles.add(title);
   const canonical = html.match(/rel="canonical" href="([^"]+)"/)?.[1]; assert.ok(canonical); assert.ok(!canonicals.has(canonical)); canonicals.add(canonical);
-  const url = new URL(canonical); assert.equal(url.pathname, path); assert.ok(!url.search && !url.hash);
+  const url = new URL(canonical); assert.equal(url.pathname, path === '/' ? '/' : path + '/'); assert.ok(!url.search && !url.hash);
   indexable = !html.includes('content="noindex, nofollow"');
   assert.equal(indexable, url.protocol === 'https:');
   assert.match(html, /data-prerendered="true"/); assert.match(html, /<main[^>]*id="main-content"/);

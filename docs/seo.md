@@ -2,6 +2,8 @@
 
 公开页面共享 `site/content.ts` 事实来源。构建输出八个预渲染 HTML 页面，包括产品、文档、工作流、自托管、使用指南、费用、隐私与条款；正文无需 JavaScript 即可读取。
 
+公开子页面采用带结尾斜杠的规范地址，与 Sites 静态页面跳转一致；canonical、sitemap 和结构化数据使用同一地址。
+
 每页都有唯一标题、描述、canonical、Open Graph/Twitter 分享信息，以及与可见内容一致的 WebPage、WebSite、SoftwareSourceCode 和面包屑结构化数据。没有虚构评价、评分或索引承诺。
 
 `sitemap.xml` 只列公开页面。私人工作区与账号页面输出 noindex，未知路径返回 404。生产构建必须设置 `CRAFTCANVAS_PUBLIC_SITE_URL`；本地构建默认不索引。

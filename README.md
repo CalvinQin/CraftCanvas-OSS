@@ -5,7 +5,7 @@
   <p>
     <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-6C55C9?style=flat-square" /></a>
     <a href="https://github.com/CalvinQin/CraftCanvas-OSS/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/CalvinQin/CraftCanvas-OSS/actions/workflows/ci.yml/badge.svg" /></a>
-    <a href="package.json"><img alt="Version 0.7.0" src="https://img.shields.io/badge/version-0.7.0-252337?style=flat-square" /></a>
+    <a href="package.json"><img alt="Version 0.7.1" src="https://img.shields.io/badge/version-0.7.1-252337?style=flat-square" /></a>
     <a href=".nvmrc"><img alt="Node 24 recommended" src="https://img.shields.io/badge/node-24_recommended-252337?style=flat-square" /></a>
   </p>
   <p><a href="https://craftcanvas.tinyherb1.chatgpt.site">在线站点</a> · <a href="README.en.md">English</a> · <a href="docs/getting-started.md">快速开始</a> · <a href="docs/workflows.md">工作流指南</a> · <a href="docs/self-hosting.md">自行部署</a> · <a href="CONTRIBUTING.md">参与贡献</a></p>

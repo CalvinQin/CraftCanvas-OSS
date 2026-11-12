@@ -1,5 +1,5 @@
 export const PROJECT = {
-  name: 'CraftCanvas', version: '0.7.0', updated: '2026-11-13',
+  name: 'CraftCanvas', version: '0.7.1', updated: '2026-11-13',
   repository: 'https://github.com/CalvinQin/CraftCanvas-OSS',
   description: '开源 AI 商品图创作工作台：无限画布、可视化节点工作流、参考图生图与可编辑交付。',
 };

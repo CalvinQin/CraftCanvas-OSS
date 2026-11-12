@@ -220,8 +220,9 @@ export default {
       const isPublic = Object.hasOwn(PUBLIC_PAGES, pathname);
       const isPrivate = ['/account', '/admin', '/workspace', '/workflow', '/library'].includes(pathname);
       if (!['GET', 'HEAD'].includes(request.method)) return error('Method Not Allowed', 405);
-      if (url.pathname === '/index.html' || ((isPublic || isPrivate) && pathname !== url.pathname)) {
-        const target = new URL(url); target.pathname = url.pathname === '/index.html' ? '/' : pathname;
+      const canonicalPath = isPublic && pathname !== '/' ? pathname + '/' : pathname;
+      if (url.pathname === '/index.html' || ((isPublic || isPrivate) && canonicalPath !== url.pathname)) {
+        const target = new URL(url); target.pathname = url.pathname === '/index.html' ? '/' : canonicalPath;
         return new Response(null, { status: 308, headers: { Location: target.href } });
       }
       if (isPublic || isPrivate) {

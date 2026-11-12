@@ -93,7 +93,7 @@ test('failed snapshot upload keeps the existing revision and content intact', as
 test('anonymous visitors can view pages; private APIs require identity', async () => {
   const env = environment();
   assert.equal((await worker.fetch(request('/', {}, null), env)).status, 200);
-  for (const path of ['/', '/account', '/account?login=1', '/admin', '/workspace', '/workflow', '/library', '/pricing', '/help', '/privacy', '/terms', '/docs', '/docs/workflows', '/docs/self-hosting']) {
+  for (const path of ['/', '/account', '/account?login=1', '/admin', '/workspace', '/workflow', '/library', '/pricing/', '/help/', '/privacy/', '/terms/', '/docs/', '/docs/workflows/', '/docs/self-hosting/']) {
     const page = await worker.fetch(request(path, {}, null), env);
     assert.equal(page.status, 200); assert.match(page.headers.get('content-type'), /text\/html/);
     assert.equal(page.headers.get('cache-control'), 'no-store');
@@ -594,13 +594,13 @@ test('model calls with a changed account are rejected before billing or upstream
 
 test('public routes canonicalize, private pages reject indexing and unknown URLs are real 404s', async () => {
   const env = environment();
-  for (const [path, target] of [['/index.html', '/'], ['/docs/', '/docs'], ['/docs/workflows/?a=1', '/docs/workflows?a=1']]) {
+  for (const [path, target] of [['/index.html', '/'], ['/docs', '/docs/'], ['/docs/workflows?a=1', '/docs/workflows/?a=1']]) {
     const response = await worker.fetch(request(path, {}, null), env);
     assert.equal(response.status, 308); assert.equal(response.headers.get('location'), 'https://site.example' + target);
   }
   for (const path of ['/admin', '/account', '/workflow', '/workspace', '/library']) assert.match((await worker.fetch(request(path, {}, null), env)).headers.get('x-robots-tag'), /noindex/);
-  assert.equal((await worker.fetch(request('/docs', {}, null), env)).headers.get('x-robots-tag'), null);
-  assert.equal(await (await worker.fetch(request('/docs', { method: 'HEAD' }, null), env)).text(), '');
+  assert.equal((await worker.fetch(request('/docs/', {}, null), env)).headers.get('x-robots-tag'), null);
+  assert.equal(await (await worker.fetch(request('/docs/', { method: 'HEAD' }, null), env)).text(), '');
   for (const path of ['/does-not-exist', '/docs/does-not-exist', '/__pages/app.page']) assert.equal((await worker.fetch(request(path, {}, null), env)).status, 404);
 });
 

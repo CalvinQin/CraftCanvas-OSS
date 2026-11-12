@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.7.1 — 2026-11-13
+
+- Align public-page canonical URLs, structured data and sitemap with the trailing-slash URLs served by Sites.
+- Match the same redirects in direct Worker deployments; preserve private-page URLs and authorization.
+
 ## 0.7.0 — 2026-11-13
 
 ### Added

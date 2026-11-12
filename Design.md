@@ -1,6 +1,6 @@
 # CraftCanvas architecture
 
-Version 0.7.0 · 2026-11-13
+Version 0.7.1 · 2026-11-13
 
 ## Boundaries
 
