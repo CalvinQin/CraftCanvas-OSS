@@ -21,7 +21,7 @@
     "drizzle-orm": "^0.45.3",
     "imagetracerjs": "^1.2.6",
     "jspdf": "^4.2.1",
-    "jszip": "3.10.1",
+    "jszip": "3.10.2",
     "lucide-react": "^0.575.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
